@@ -6,6 +6,9 @@
 //  Copyright © 2015 STEiN-Net. All rights reserved.
 //
 
+
+
+// DO NOT BE DISCOURAGED!!! <3 
 import UIKit
 import CoreData
 
