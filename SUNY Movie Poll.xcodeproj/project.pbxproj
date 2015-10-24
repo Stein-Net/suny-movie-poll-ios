@@ -16,6 +16,7 @@
 		F34A3AE21BDB34AD00D5DFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A3AE01BDB34AD00D5DFE4 /* LaunchScreen.storyboard */; };
 		F34A3AED1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AEC1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift */; };
 		F34A3AF81BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AF71BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift */; };
+		F3C481061BDC019B000F0B6B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C481051BDC019B000F0B6B /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F34A3AF31BDB34AD00D5DFE4 /* SUNY Movie PollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUNY Movie PollUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34A3AF71BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNY_Movie_PollUITests.swift; sourceTree = "<group>"; };
 		F34A3AF91BDB34AD00D5DFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C481051BDC019B000F0B6B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				F34A3AD21BDB34AD00D5DFE4 /* AppDelegate.swift */,
 				F34A3AD71BDB34AD00D5DFE4 /* MasterViewController.swift */,
+				F3C481051BDC019B000F0B6B /* SwiftyJSON.swift */,
 				F34A3AD91BDB34AD00D5DFE4 /* DetailViewController.swift */,
 				F34A3ADB1BDB34AD00D5DFE4 /* Main.storyboard */,
 				F34A3ADE1BDB34AD00D5DFE4 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 				F34A3AD61BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodeld in Sources */,
 				F34A3AD31BDB34AD00D5DFE4 /* AppDelegate.swift in Sources */,
 				F34A3AD81BDB34AD00D5DFE4 /* MasterViewController.swift in Sources */,
+				F3C481061BDC019B000F0B6B /* SwiftyJSON.swift in Sources */,
 				F34A3ADA1BDB34AD00D5DFE4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +495,7 @@
 				F34A3AFE1BDB34AD00D5DFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F34A3AFF1BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie PollTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				F34A3B011BDB34AD00D5DFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F34A3B021BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie PollUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				F34A3B041BDB34AD00D5DFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

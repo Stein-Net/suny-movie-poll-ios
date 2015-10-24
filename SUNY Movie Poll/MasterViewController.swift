@@ -9,6 +9,7 @@
 
 
 // DO NOT BE DISCOURAGED!!! <3 
+// I SWEAR it's easier than it looks
 import UIKit
 import CoreData
 
