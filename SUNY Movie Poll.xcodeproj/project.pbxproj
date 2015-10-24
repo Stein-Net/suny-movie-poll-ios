@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F34A3AD31BDB34AD00D5DFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AD21BDB34AD00D5DFE4 /* AppDelegate.swift */; };
+		F34A3AD61BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AD41BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodeld */; };
+		F34A3AD81BDB34AD00D5DFE4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AD71BDB34AD00D5DFE4 /* MasterViewController.swift */; };
+		F34A3ADA1BDB34AD00D5DFE4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AD91BDB34AD00D5DFE4 /* DetailViewController.swift */; };
+		F34A3ADD1BDB34AD00D5DFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A3ADB1BDB34AD00D5DFE4 /* Main.storyboard */; };
+		F34A3ADF1BDB34AD00D5DFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34A3ADE1BDB34AD00D5DFE4 /* Assets.xcassets */; };
+		F34A3AE21BDB34AD00D5DFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A3AE01BDB34AD00D5DFE4 /* LaunchScreen.storyboard */; };
+		F34A3AED1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AEC1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift */; };
+		F34A3AF81BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A3AF71BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F34A3AE91BDB34AD00D5DFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34A3AC71BDB34AD00D5DFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34A3ACE1BDB34AD00D5DFE4;
+			remoteInfo = "SUNY Movie Poll";
+		};
+		F34A3AF41BDB34AD00D5DFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34A3AC71BDB34AD00D5DFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34A3ACE1BDB34AD00D5DFE4;
+			remoteInfo = "SUNY Movie Poll";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F34A3ACF1BDB34AD00D5DFE4 /* SUNY Movie Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUNY Movie Poll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34A3AD21BDB34AD00D5DFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F34A3AD51BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SUNY_Movie_Poll.xcdatamodel; sourceTree = "<group>"; };
+		F34A3AD71BDB34AD00D5DFE4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F34A3AD91BDB34AD00D5DFE4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F34A3ADC1BDB34AD00D5DFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F34A3ADE1BDB34AD00D5DFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F34A3AE11BDB34AD00D5DFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F34A3AE31BDB34AD00D5DFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34A3AE81BDB34AD00D5DFE4 /* SUNY Movie PollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUNY Movie PollTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34A3AEC1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNY_Movie_PollTests.swift; sourceTree = "<group>"; };
+		F34A3AEE1BDB34AD00D5DFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34A3AF31BDB34AD00D5DFE4 /* SUNY Movie PollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUNY Movie PollUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34A3AF71BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNY_Movie_PollUITests.swift; sourceTree = "<group>"; };
+		F34A3AF91BDB34AD00D5DFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F34A3ACC1BDB34AD00D5DFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34A3AE51BDB34AD00D5DFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34A3AF01BDB34AD00D5DFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F34A3AC61BDB34AD00D5DFE4 = {
+			isa = PBXGroup;
+			children = (
+				F34A3AD11BDB34AD00D5DFE4 /* SUNY Movie Poll */,
+				F34A3AEB1BDB34AD00D5DFE4 /* SUNY Movie PollTests */,
+				F34A3AF61BDB34AD00D5DFE4 /* SUNY Movie PollUITests */,
+				F34A3AD01BDB34AD00D5DFE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F34A3AD01BDB34AD00D5DFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F34A3ACF1BDB34AD00D5DFE4 /* SUNY Movie Poll.app */,
+				F34A3AE81BDB34AD00D5DFE4 /* SUNY Movie PollTests.xctest */,
+				F34A3AF31BDB34AD00D5DFE4 /* SUNY Movie PollUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F34A3AD11BDB34AD00D5DFE4 /* SUNY Movie Poll */ = {
+			isa = PBXGroup;
+			children = (
+				F34A3AD21BDB34AD00D5DFE4 /* AppDelegate.swift */,
+				F34A3AD71BDB34AD00D5DFE4 /* MasterViewController.swift */,
+				F34A3AD91BDB34AD00D5DFE4 /* DetailViewController.swift */,
+				F34A3ADB1BDB34AD00D5DFE4 /* Main.storyboard */,
+				F34A3ADE1BDB34AD00D5DFE4 /* Assets.xcassets */,
+				F34A3AE01BDB34AD00D5DFE4 /* LaunchScreen.storyboard */,
+				F34A3AE31BDB34AD00D5DFE4 /* Info.plist */,
+				F34A3AD41BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodeld */,
+			);
+			path = "SUNY Movie Poll";
+			sourceTree = "<group>";
+		};
+		F34A3AEB1BDB34AD00D5DFE4 /* SUNY Movie PollTests */ = {
+			isa = PBXGroup;
+			children = (
+				F34A3AEC1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift */,
+				F34A3AEE1BDB34AD00D5DFE4 /* Info.plist */,
+			);
+			path = "SUNY Movie PollTests";
+			sourceTree = "<group>";
+		};
+		F34A3AF61BDB34AD00D5DFE4 /* SUNY Movie PollUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F34A3AF71BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift */,
+				F34A3AF91BDB34AD00D5DFE4 /* Info.plist */,
+			);
+			path = "SUNY Movie PollUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F34A3ACE1BDB34AD00D5DFE4 /* SUNY Movie Poll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34A3AFC1BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie Poll" */;
+			buildPhases = (
+				F34A3ACB1BDB34AD00D5DFE4 /* Sources */,
+				F34A3ACC1BDB34AD00D5DFE4 /* Frameworks */,
+				F34A3ACD1BDB34AD00D5DFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SUNY Movie Poll";
+			productName = "SUNY Movie Poll";
+			productReference = F34A3ACF1BDB34AD00D5DFE4 /* SUNY Movie Poll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F34A3AE71BDB34AD00D5DFE4 /* SUNY Movie PollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34A3AFF1BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie PollTests" */;
+			buildPhases = (
+				F34A3AE41BDB34AD00D5DFE4 /* Sources */,
+				F34A3AE51BDB34AD00D5DFE4 /* Frameworks */,
+				F34A3AE61BDB34AD00D5DFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34A3AEA1BDB34AD00D5DFE4 /* PBXTargetDependency */,
+			);
+			name = "SUNY Movie PollTests";
+			productName = "SUNY Movie PollTests";
+			productReference = F34A3AE81BDB34AD00D5DFE4 /* SUNY Movie PollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F34A3AF21BDB34AD00D5DFE4 /* SUNY Movie PollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34A3B021BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie PollUITests" */;
+			buildPhases = (
+				F34A3AEF1BDB34AD00D5DFE4 /* Sources */,
+				F34A3AF01BDB34AD00D5DFE4 /* Frameworks */,
+				F34A3AF11BDB34AD00D5DFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34A3AF51BDB34AD00D5DFE4 /* PBXTargetDependency */,
+			);
+			name = "SUNY Movie PollUITests";
+			productName = "SUNY Movie PollUITests";
+			productReference = F34A3AF31BDB34AD00D5DFE4 /* SUNY Movie PollUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F34A3AC71BDB34AD00D5DFE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "STEiN-Net";
+				TargetAttributes = {
+					F34A3ACE1BDB34AD00D5DFE4 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					F34A3AE71BDB34AD00D5DFE4 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F34A3ACE1BDB34AD00D5DFE4;
+					};
+					F34A3AF21BDB34AD00D5DFE4 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F34A3ACE1BDB34AD00D5DFE4;
+					};
+				};
+			};
+			buildConfigurationList = F34A3ACA1BDB34AD00D5DFE4 /* Build configuration list for PBXProject "SUNY Movie Poll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F34A3AC61BDB34AD00D5DFE4;
+			productRefGroup = F34A3AD01BDB34AD00D5DFE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F34A3ACE1BDB34AD00D5DFE4 /* SUNY Movie Poll */,
+				F34A3AE71BDB34AD00D5DFE4 /* SUNY Movie PollTests */,
+				F34A3AF21BDB34AD00D5DFE4 /* SUNY Movie PollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F34A3ACD1BDB34AD00D5DFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34A3AE21BDB34AD00D5DFE4 /* LaunchScreen.storyboard in Resources */,
+				F34A3ADF1BDB34AD00D5DFE4 /* Assets.xcassets in Resources */,
+				F34A3ADD1BDB34AD00D5DFE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34A3AE61BDB34AD00D5DFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34A3AF11BDB34AD00D5DFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F34A3ACB1BDB34AD00D5DFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34A3AD61BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodeld in Sources */,
+				F34A3AD31BDB34AD00D5DFE4 /* AppDelegate.swift in Sources */,
+				F34A3AD81BDB34AD00D5DFE4 /* MasterViewController.swift in Sources */,
+				F34A3ADA1BDB34AD00D5DFE4 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34A3AE41BDB34AD00D5DFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34A3AED1BDB34AD00D5DFE4 /* SUNY_Movie_PollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34A3AEF1BDB34AD00D5DFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34A3AF81BDB34AD00D5DFE4 /* SUNY_Movie_PollUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F34A3AEA1BDB34AD00D5DFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34A3ACE1BDB34AD00D5DFE4 /* SUNY Movie Poll */;
+			targetProxy = F34A3AE91BDB34AD00D5DFE4 /* PBXContainerItemProxy */;
+		};
+		F34A3AF51BDB34AD00D5DFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34A3ACE1BDB34AD00D5DFE4 /* SUNY Movie Poll */;
+			targetProxy = F34A3AF41BDB34AD00D5DFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F34A3ADB1BDB34AD00D5DFE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34A3ADC1BDB34AD00D5DFE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F34A3AE01BDB34AD00D5DFE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34A3AE11BDB34AD00D5DFE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F34A3AFA1BDB34AD00D5DFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F34A3AFB1BDB34AD00D5DFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F34A3AFD1BDB34AD00D5DFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SUNY Movie Poll/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.stein13.SUNY-Movie-Poll";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F34A3AFE1BDB34AD00D5DFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SUNY Movie Poll/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.stein13.SUNY-Movie-Poll";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F34A3B001BDB34AD00D5DFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SUNY Movie PollTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.stein13.SUNY-Movie-PollTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SUNY Movie Poll.app/SUNY Movie Poll";
+			};
+			name = Debug;
+		};
+		F34A3B011BDB34AD00D5DFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SUNY Movie PollTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.stein13.SUNY-Movie-PollTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SUNY Movie Poll.app/SUNY Movie Poll";
+			};
+			name = Release;
+		};
+		F34A3B031BDB34AD00D5DFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SUNY Movie PollUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.stein13.SUNY-Movie-PollUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SUNY Movie Poll";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F34A3B041BDB34AD00D5DFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SUNY Movie PollUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.stein13.SUNY-Movie-PollUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SUNY Movie Poll";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F34A3ACA1BDB34AD00D5DFE4 /* Build configuration list for PBXProject "SUNY Movie Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34A3AFA1BDB34AD00D5DFE4 /* Debug */,
+				F34A3AFB1BDB34AD00D5DFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34A3AFC1BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34A3AFD1BDB34AD00D5DFE4 /* Debug */,
+				F34A3AFE1BDB34AD00D5DFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F34A3AFF1BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie PollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34A3B001BDB34AD00D5DFE4 /* Debug */,
+				F34A3B011BDB34AD00D5DFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F34A3B021BDB34AD00D5DFE4 /* Build configuration list for PBXNativeTarget "SUNY Movie PollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34A3B031BDB34AD00D5DFE4 /* Debug */,
+				F34A3B041BDB34AD00D5DFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F34A3AD41BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F34A3AD51BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodel */,
+			);
+			currentVersion = F34A3AD51BDB34AD00D5DFE4 /* SUNY_Movie_Poll.xcdatamodel */;
+			path = SUNY_Movie_Poll.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F34A3AC71BDB34AD00D5DFE4 /* Project object */;
+}
