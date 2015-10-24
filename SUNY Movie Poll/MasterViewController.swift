@@ -10,6 +10,10 @@
 
 // DO NOT BE DISCOURAGED!!! <3 
 // I SWEAR it's easier than it looks
+// The master view is the cells IE The stuff that is used to navigate the 'days' 
+// IE There should be a cell for Monday, Tuesday, Wednesday etc. - I'm going to make
+// Some helper classes for you <3 They are like headers 
+// 
 import UIKit
 import CoreData
 
@@ -23,7 +27,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
+        var monday = Weekday(day1: "monday")
+        monday.upVote(5)
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
