@@ -31,7 +31,7 @@ class Weekday {
                 self.votes[i] = jsonData["votes"]["movie\(i+1)"].int!
             }
             print(self.movies)
-            print(self.votes)
+            print("Initial Votes Array: \(self.votes)")
 
             
         }).resume()
@@ -46,8 +46,8 @@ class Weekday {
     }
     func upVote(index: Int) {
         let request = NSMutableURLRequest(URL: NSURL(string: "https://suny-movie-poll.firebaseio.com/movie-list/\(day)/votes.json")!)
-        request.HTTPMethod = "PUT" //Currently erases all other votes
-        let postString = "{\"movie\(index)\":69, }"
+        request.HTTPMethod = "PUT"
+        let postString = votePostString(index)
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
             data, response, error in
@@ -62,9 +62,28 @@ class Weekday {
             let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
             print("responseString = \(responseString)")
             print("request = \(request)")
+            print(postString)
         }
         task.resume()
     }
-    
+    func votePostString(index: Int) -> String {
+        print("Vote array = \(self.votes)")
+        var ret = "{"
+        for (var i = 0; i < 6; i++) {
+            if (i + 1 == index) {
+                if (i == 5) {
+                     ret += "\"movie\(index)\":\(votes[i] + 1) } "
+                    break;
+                }
+                ret += "\"movie\(index)\":\(votes[i] + 1), "
+            } else if (i == 5 && i != index) {
+                ret += "\"movie\(i+1)\":\(votes[i]) } "
+            } else if (i <= 5){
+                ret += "\"movie\(i+1)\":\(votes[i]), "
+            }
+            
+        }
+        return ret
+    }
 }
 
