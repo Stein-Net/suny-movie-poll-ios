@@ -27,11 +27,15 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        var monday = Weekday(day1: "monday")
-        sleep(3) // REMOVE when using on a real device-- There MUST be a pause long enough for JSON data to download
+        
+        // Examples of how to use Weekday
+        // var monday = Weekday(day1: "monday")
+        // sleep(3) // REMOVE when using on a real device-- There MUST be a pause long enough for JSON data to download
         // Otherwise Upvote will nullify everything
-        monday.upVote(6)
+        // monday.upVote(6)
         // Use userDefaults to tell if user has voted (for the day, or within last 24 hours? Your call.)
+        
+        
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
