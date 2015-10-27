@@ -26,7 +26,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        //self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
         // Examples of how to use Weekday
         // var monday = Weekday(day1: "monday")
@@ -34,10 +34,16 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Otherwise Upvote will nullify everything
         // monday.upVote(6)
         // Use userDefaults to tell if user has voted (for the day, or within last 24 hours? Your call.)
-        
-        
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        var monday = Weekday(day1: "monday")
+        var tuesday = Weekday(day1: "tuesday")
+        var wednesday = Weekday(day1: "wednesday")
+        var thursday = Weekday(day1: "thursday")
+        var friday = Weekday(day1: "friday")
+        var saturday = Weekday(day1: "saturday")
+        var sunday = Weekday(day1: "sunday")
+        insertNewObject(monday)
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+        //self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -54,14 +60,14 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Dispose of any resources that can be recreated.
     }
 
-    func insertNewObject(sender: AnyObject) {
+    func insertNewObject(sender: Weekday) {
         let context = self.fetchedResultsController.managedObjectContext
         let entity = self.fetchedResultsController.fetchRequest.entity!
         let newManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context)
              
         // If appropriate, configure the new managed object.
         // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-        newManagedObject.setValue(NSDate(), forKey: "timeStamp")
+        newManagedObject.setValue(sender, forKey: "day")
              
         // Save the context.
         do {
@@ -211,6 +217,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
          self.tableView.reloadData()
      }
      */
+   
 
 }
 
