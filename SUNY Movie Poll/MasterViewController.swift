@@ -32,18 +32,15 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        
-        
+        sleep(1)
         // Examples of how to use Weekday
         // var monday = new Weekday(day1: "Monday")
         // sleep(3) REMOVE when using on a real device-- There MUST be a pause long enough for JSON data to download
         // Otherwise Upvote will nullify everything
         // monday.upVote(6)
         // Use userDefaults to tell if user has voted (for the day, or within last 24 hours? Your call.)
-        
-        
         
         if let split = self.splitViewController {
             let controllers = split.viewControllers
@@ -104,6 +101,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 let object = self.fetchedResultsController.objectAtIndexPath(indexPath)
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
+                controller.day = week[indexPath.row];
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

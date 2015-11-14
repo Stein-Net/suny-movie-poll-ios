@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -33,47 +32,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udj-SJ-HxE">
-                                <rect key="frame" x="20" y="72" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="udj-SJ-HxE">
+                                <rect key="frame" x="20" y="72" width="128" height="150"/>
                                 <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="72" width="179" height="230"/>
+                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TcO-hf-qU1">
-                                <rect key="frame" x="340" y="72" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="by3-kM-8Bh">
+                                <rect key="frame" x="452" y="250" width="128" height="150"/>
                                 <animations/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="250" width="128" height="150"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="201" y="302" width="179" height="230"/>
+                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRI-ps-gUW">
-                                <rect key="frame" x="20" y="208" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OM6-97-A22">
+                                <rect key="frame" x="20" y="430" width="128" height="150"/>
                                 <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="531" width="179" height="230"/>
+                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="by3-kM-8Bh">
-                                <rect key="frame" x="340" y="208" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CRI-ps-gUW">
+                                <rect key="frame" x="20" y="250" width="128" height="150"/>
                                 <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="302" width="179" height="230"/>
+                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-Aw-Frm">
-                                <rect key="frame" x="340" y="344" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TcO-hf-qU1">
+                                <rect key="frame" x="452" y="72" width="128" height="150"/>
                                 <animations/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="72" width="128" height="150"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="201" y="72" width="179" height="230"/>
+                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OM6-97-A22">
-                                <rect key="frame" x="20" y="344" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-Aw-Frm">
+                                <rect key="frame" x="452" y="430" width="128" height="150"/>
                                 <animations/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="430" width="128" height="150"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="201" y="531" width="179" height="230"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="OM6-97-A22" secondAttribute="leading" id="Aah-8O-qH6"/>
-                            <constraint firstItem="udj-SJ-HxE" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" id="Bbn-Dt-Ttb"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="udj-SJ-HxE" secondAttribute="leading" id="Fv3-8b-oG3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ca9-Aw-Frm" secondAttribute="trailing" id="Gh1-jU-xdi"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="CRI-ps-gUW" secondAttribute="leading" id="Ka5-P6-fSS"/>
-                            <constraint firstItem="ca9-Aw-Frm" firstAttribute="top" secondItem="by3-kM-8Bh" secondAttribute="bottom" constant="8" id="OQK-7M-v5T"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TcO-hf-qU1" secondAttribute="trailing" id="VAj-7k-Aam"/>
-                            <constraint firstItem="TcO-hf-qU1" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" id="gJG-kG-wz2"/>
-                            <constraint firstItem="by3-kM-8Bh" firstAttribute="top" secondItem="TcO-hf-qU1" secondAttribute="bottom" constant="8" id="ivC-Lk-cLf"/>
-                            <constraint firstItem="CRI-ps-gUW" firstAttribute="top" secondItem="udj-SJ-HxE" secondAttribute="bottom" constant="8" id="ni5-k9-r2p"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="by3-kM-8Bh" secondAttribute="trailing" id="vQT-oK-oWx"/>
-                            <constraint firstItem="OM6-97-A22" firstAttribute="top" secondItem="CRI-ps-gUW" secondAttribute="bottom" constant="8" id="vw2-HH-mvR"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
@@ -88,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="129"/>
+            <point key="canvasLocation" x="708" y="129"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -168,6 +180,9 @@
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lZpWprJqbIFpEV5uoHfoK0KCnTW.jpg" width="396" height="594"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
