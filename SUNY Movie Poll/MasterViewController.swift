@@ -21,27 +21,48 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
-
+    var week = [Weekday]()
+    var monday = Weekday(day1: "Monday")
+    var tuesday = Weekday(day1: "Tuesday")
+    var wednesday = Weekday(day1: "Wednesday")
+    var thursday = Weekday(day1: "Thursday")
+    var friday = Weekday(day1: "Friday")
+    var saturday = Weekday(day1: "Saturday")
+    var sunday = Weekday(day1: "Sunday")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
+        
         // Examples of how to use Weekday
-        // var monday = Weekday(day1: "monday")
-        // sleep(3) // REMOVE when using on a real device-- There MUST be a pause long enough for JSON data to download
+        // var monday = new Weekday(day1: "Monday")
+        // sleep(3) REMOVE when using on a real device-- There MUST be a pause long enough for JSON data to download
         // Otherwise Upvote will nullify everything
         // monday.upVote(6)
         // Use userDefaults to tell if user has voted (for the day, or within last 24 hours? Your call.)
         
         
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+       
+        week.append(monday)
+        week.append(tuesday)
+        week.append(wednesday)
+        week.append(thursday)
+        week.append(friday)
+        week.append(saturday)
+        week.append(sunday)
+        
+        
+        
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -77,9 +98,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("prepareForSegue")
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-            let object = self.fetchedResultsController.objectAtIndexPath(indexPath)
+                let object = self.fetchedResultsController.objectAtIndexPath(indexPath)
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
@@ -92,16 +114,21 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.fetchedResultsController.sections?.count ?? 0
+        //return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = self.fetchedResultsController.sections![section]
         return sectionInfo.numberOfObjects
+        //return 10
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         self.configureCell(cell, atIndexPath: indexPath)
+        let day1 = self.week[indexPath.row]
+        
+        cell.textLabel?.text = day1.day
         return cell
     }
 

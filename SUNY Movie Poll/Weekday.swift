@@ -12,11 +12,12 @@ class Weekday {
     // In data movie1 = movies[0]
     var movies: [String] = [ "movie1", "movie2", "movie3", "movie4", "movie5", "movie6" ]
     var votes: [Int] = [0,0,0,0,0,0]
-    
+    var thumbs: [String] = ["https://image.tmdb.org/t/p/w185/kCimAd6QNYTn28xfYBmqhLLyfIX.jpg","src","src","src","src","src"]
+    var trails: [String] = ["t1", "t2", "t3", "t4", "t5", "t6"]
     
     init(day1: String) {
         day = day1;
-        let url = NSURL(string: "https://suny-movie-poll.firebaseio.com/movie-list/\(day).json")
+        let url = NSURL(string: "https://suny-movie-poll.firebaseio.com/movie-list/\(day.lowercaseString).json")
         let request = NSURLRequest(URL: url!)
 
        // var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
@@ -27,17 +28,25 @@ class Weekday {
             
             var jsonData = JSON(data: data!)
             for (var i = 0; i < 6; i++) {
-                self.movies[i] = jsonData["movie\(i+1)"].string!
+                self.movies[i] = jsonData["movie\(i+1)"]["title"].string!
+                self.thumbs[i] = jsonData["movie\(i+1)"]["thumb"].string!
+                self.trails[i] = jsonData["movie\(i+1)"]["trailer"].string!
                 self.votes[i] = jsonData["votes"]["movie\(i+1)"].int!
+                
             }
-            print(self.movies)
-            print("Initial Votes Array: \(self.votes)")
-
-            
         }).resume()
         
-        
+        print(day)
         }
+    init(mov: [String], vote: [Int], thumb: [String], trail: [String]) {
+        movies = mov
+        votes = vote
+        thumbs = thumb
+        trails = trail
+        
+    }
+    
+    
     func getMovie(index: Int) -> String {
         return movies[index]
     }
