@@ -33,37 +33,40 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let m1 = self.movie1 {
-                m1.image = day.thumbnails[0]
+                let url = NSURL(string: (day.thumbs[0]))
+                let data = NSData(contentsOfURL: url!)
+                 m1.image = UIImage(data: data!)
             }
             if let m2 = self.movie2 {
-                m2.image = day.thumbnails[1]
+                let url = NSURL(string: (day.thumbs[1]))
+                let data = NSData(contentsOfURL: url!)
+                m2.image = UIImage(data: data!)
             }
-            if let m3 = self.movie3 {
-                m3.image = day.thumbnails[2]
+            if let m3 = self.movie1 {
+                let url = NSURL(string: (day.thumbs[2]))
+                let data = NSData(contentsOfURL: url!)
+                m3.image = UIImage(data: data!)
             }
-            if let m4 = self.movie4 {
-                m4.image = day.thumbnails[3]
+            if let m4 = self.movie1 {
+                let url = NSURL(string: (day.thumbs[3]))
+                let data = NSData(contentsOfURL: url!)
+                m4.image = UIImage(data: data!)
             }
-            if let m5 = self.movie5 {
-                m5.image = day.thumbnails[4]
+            if let m5 = self.movie1 {
+                let url = NSURL(string: (day.thumbs[4]))
+                let data = NSData(contentsOfURL: url!)
+                m5.image = UIImage(data: data!)
             }
-            if let m6 = self.movie6 {
-                m6.image = day.thumbnails[5]
+            if let m5 = self.movie1 {
+                let url = NSURL(string: (day.thumbs[5]))
+                let data = NSData(contentsOfURL: url!)
+                m5.image = UIImage(data: data!)
             }
         }
     }
-    func getImageFromServer(imageURL: String, completion: ((image: UIImage?) -> Void)) {
-        let url:String = imageURL
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: url)!) {(data, response, error) in
-            completion(image: UIImage(data: data!))
-        }
-        
-        task.resume()
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
     }

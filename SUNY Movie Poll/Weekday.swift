@@ -5,16 +5,15 @@
 //  Created by Gregory Rudolph-Alverson on 10/24/15.
 //  Copyright © 2015 STEiN-Net. All rights reserved.
 //
-import UIKit
+
 import Foundation
 class Weekday {
     var day = ""
     // In data movie1 = movies[0]
     var movies: [String] = [ "movie1", "movie2", "movie3", "movie4", "movie5", "movie6" ]
     var votes: [Int] = [0,0,0,0,0,0]
-    var thumbs: [String] = ["src","src","src","src","src","src"]
+    var thumbs: [String] = ["https://image.tmdb.org/t/p/w185/kCimAd6QNYTn28xfYBmqhLLyfIX.jpg","src","src","src","src","src"]
     var trails: [String] = ["t1", "t2", "t3", "t4", "t5", "t6"]
-    var thumbnails: [UIImage] = []
     
     init(day1: String) {
         day = day1;
@@ -36,20 +35,6 @@ class Weekday {
                 
             }
         }).resume()
-        //let url = NSURL(string: (day.thumbs[5]))
-        //print(url)
-        //let data = NSData(contentsOfURL: url!)
-        //m5.image = UIImage(data: data!)
-        sleep(3)
-        for(var i = 0; i < 6; i++) {
-            
-            let url = NSURL(string: thumbs[i])
-            let data = NSData(contentsOfURL: url!)
-            print("Downloading image \(i+1) from: \(thumbs[i])")
-            print("Thumb for movie: \(movies[i])")
-            thumbnails.append(UIImage(data: data!)!)
-        }
-        
         
         print(day)
         }
